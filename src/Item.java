@@ -9,6 +9,7 @@ public class Item {
     Item (Food food, int count, String description) {
         this.count = count;
     }
+
     public String getDescription() {
         return description;
     }
