@@ -1,10 +1,11 @@
 public class Customer {
     private static int customerNumber = 0;
     private String name;
-    private Address address = new Address();
+    private Address address;
 
     Customer(String customerName,Address newAddress) {
         this.name = customerName;
+        this.address = newAddress;
     }
     public int getCustomerNumber() {
         customerNumber++;
@@ -19,7 +20,7 @@ public class Customer {
     public void setAddress(Address newAddress) {
         this.address = newAddress;
     }
-    public String getAddress() {
-        return address.toString();
+    public Address getAddress() {
+        return address;
     }
 }
