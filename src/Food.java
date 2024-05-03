@@ -10,9 +10,11 @@ public class Food {
         this.price = price;
         menu.add(this);
     }
+
     public static Vector<Food> getMenu() {
         return menu;
     }
+
     public String getName() {
         return name;
     }
